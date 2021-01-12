@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 150px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #55555566;
+}
+
+.btn p {
+  color: #333333;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.8s;
+}
+
+.btn span {
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.btn > .top, 
+.btn > .left,
+.btn > .bottom,
+.btn > .right {
+  background-color: #333333;  
+}
+
+.btn > .top, .btn > .left {
+  width: 100%;
+  height: 1px;  
+}
+
+.btn > .bottom, .btn > .right {
+  width: 1px;
+  height: 100%;  
+}
+
+.btn > .top, .btn > .right {
+  top: 0;
+}
+
+.btn > .top {  
+  left: 0;
+  transform: translateX(100%);
+}
+
+.btn > .right {  
+  right: 0;
+  transform: translateY(100%);  
+}
+
+.btn > .bottom, .btn > .left {
+  bottom: 0;
+  left: 0;  
+}
+
+.btn > .bottom {
+  transform: translateY(-100%);
+}
+
+.btn > .left {  
+  transform: translateX(-100%);  
+}
+
+.btn:hover span {
+  transform: translate(0);  
+}
