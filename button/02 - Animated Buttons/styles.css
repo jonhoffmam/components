@@ -80,3 +80,73 @@ body {
   transform: translateX(calc(-50%)) rotate(45deg);
   height: 16.5px;
 }
+
+.search {
+  width: 220px;
+}
+
+.buttonOpenSearch {
+	width: 100%;
+	max-width: 360px;
+  height: 64px;
+  background: seagreen;
+  margin: 0 10px;
+	
+	border-radius: 8px;
+	border: 0;
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	outline-style: none;
+
+	position: relative;	
+	cursor: pointer;
+}
+
+.search strong {
+  padding: 25px;
+}
+
+.search button span {	
+	width: 64px;
+  height: 64px;  
+
+	display: flex;
+	align-items: center;
+	justify-content: center;  
+
+	transition: all 0.2s;
+}
+
+.buttonOpenSearch span {	
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.buttonOpenSearch span svg {
+	color: #FFF;
+	width: 20px;
+	height: 20px;
+}
+
+.buttonOpenSearch strong {
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+
+	left: 50%;
+  transition: color 0.2s, left 0.2s;
+}
+
+.buttonOpenSearch:hover span {	
+	width: 100%;
+}
+
+.buttonOpenSearch:hover strong {
+	color: rgba(0, 0, 0, 0.0);
+  position: absolute;
+  left: 100%;
+}
